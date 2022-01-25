@@ -1,0 +1,9 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	POLL              3001
+//	MyChar            3005
+//	DSR_Addr          3006
+//	DDR_Addr          3007
+
