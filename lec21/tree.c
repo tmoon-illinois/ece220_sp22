@@ -44,6 +44,26 @@ int main(){
 
     printTree(root, 0);
 
+
+/*
+    int key;
+    printf("Enter key:");
+    scanf("%d", &key);
+    t_node *temp = BSTSearch(root, key);
+    if(temp == NULL)
+        printf("No key item in the tree\n");
+    else
+        printf("%d is found. ", temp->data);
+*/
+    t_node *temp; 
+
+    temp = FindMin(root);
+    printf("%d is min. ", temp->data);
+    temp = FindMax(root);
+    printf("%d is max. ", temp->data);
+    
+    DeleteTree(root);
+    
 }
 
 
@@ -125,9 +145,9 @@ void DeleteTree(t_node *node)
         return;
     // Recursive case
     else{
-        printf("Free node of %d\n ", node->data);
         DeleteTree(node->left);
         DeleteTree(node->right);
+        printf("Free node of %d\n ", node->data);
         free(node);
     }
 }
