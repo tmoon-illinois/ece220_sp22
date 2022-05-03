@@ -1,0 +1,11 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	ISBST             3011
+//	TEARDOWN          303D
+//	STACK             3042
+//	MAX               3043
+//	MIN               3044
+//	ROOT              3045
+
